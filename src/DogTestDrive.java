@@ -8,13 +8,11 @@ public class DogTestDrive {
         Dog bud = new Dog(20, "Golden retriever", "Bud");
 
         bear.printDetails();
-        bear.bark();
+        bear.setSize(90);
+        bear.printDetails();
 
         rex.printDetails();
-        rex.bark();
-
         bud.printDetails();
-        bud.bark();
 
 
     }

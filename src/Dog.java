@@ -9,6 +9,21 @@ public class Dog {
         this.name = dogName;
     }
 
+//    Setter (mutator ) methods.
+
+    public void setSize(int dogSize){
+        this.size = dogSize;
+    }
+
+    public void setBreed(String dogBreed){
+        this.breed = dogBreed;
+    }
+
+    public void setName(String dogName){
+        this.name = dogName;
+    }
+
+//    Getter (accessor ) methods
     public String getName(){
         return this.name;
     }
@@ -23,7 +38,9 @@ public class Dog {
 
     public void printDetails(){
         System.out.println(this.getName() + " is a beautiful " + this.getBreed() + " dog that weighs "+ this.getSize() + " pounds.");
+        this.bark();
     }
+
 
     public void bark(){
         if(size > 60){
